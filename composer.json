@@ -1,5 +1,5 @@
 {
-  "name": "sleekcommerce/sleekshop-phpsdk-json",
+  "name": "artincms/phpsdk-sleekshop",
   "type": "library",
   "description": "Sleekshop PHP SDK for the Sleekshop API",
   "version": "2.0.0",
@@ -11,15 +11,9 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Kaveh Raji",
-      "email": "info@sleekshop.io",
-      "homepage": "https://www.sleekshop.io",
-      "role": "Developer"
-    },
-    {
-      "name": "Torsten Högel",
-      "email": "th@sleekshop.io",
-      "homepage": "https://www.sleekshop.io",
+      "name": "adel raheli",
+      "email": "adel.raheli@gmail.com",
+      "homepage": "https://www.raheli.ir",
       "role": "Developer"
     }
   ],

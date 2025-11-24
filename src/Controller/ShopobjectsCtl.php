@@ -138,9 +138,9 @@ class ShopobjectsCtl
      * @param array $availability
      * @return array
      */
-    public function CreateProduct(string $class = '', string $name = '', int $shop_active = 0, array $attributes = [], array $metadata = [], array $seo = [], array $availability = []): array
+    public function CreateProduct(string $class = '', string $name = '', int $shop_active = 0, array $attributes = [], array $metadata = [], array $seo = [], array $availability = [], array $categories = []): array
     {
-        return $this->request->create_product($class, $name, $shop_active, $attributes, $metadata, $seo, $availability);
+        return $this->request->create_product($class, $name, $shop_active, $attributes, $metadata, $seo, $availability, $categories );
     }
 
     /**

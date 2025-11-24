@@ -510,7 +510,7 @@ class SleekshopRequest
      * @param array $availability The availability informations for the product
      * @return array The result of the request
      */
-    public function create_product(string $class, string $name, int $shop_active, array $attributes, array $metadata, array $seo, array $availability): array
+    public function create_product(string $class, string $name, int $shop_active, array $attributes, array $metadata, array $seo, array $availability,array $categories = []): array
     {
         $post_data = $this->post_data;
         $post_data['licence_secret_key'] = $this->licence_secret_key;
@@ -522,6 +522,7 @@ class SleekshopRequest
         $post_data['metadata'] = json_encode($metadata);
         $post_data['seo'] = json_encode($seo);
         $post_data['availability'] = json_encode($availability);
+        $post_data['categories'] = json_encode($categories);
 
         return $this->snd_request($this->server, $post_data);
     }
